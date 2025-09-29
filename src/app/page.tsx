@@ -1,88 +1,61 @@
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+  return (
+
+    <div className="min-h-screen flex flex-col items-start justify-start p-8 font-sans space-y-6">
+
+      {/* Header nav */}
+
+      <nav className="flex gap-8 text-sm font-medium">
+
+        <a href="/">home</a>
+
+        <a href="/journaling">my journaling system</a>
+
+        <a href="/content">content i like</a>
+
+      </nav>
+
+      {/* Intro */}
+
+      <section className="space-y-4">
+
+        <p>hi i'm farza.</p>
+
+        <p>i'm just a guy that loves creating things for others.</p>
+
+        <p>i started my first company at 13 when i sold dragon ball z tenkaichi budokai 2 in 2009 on ebay.</p>
+
+        <p>selling stuff online turned into my high school obsession and i grew that company to $100K in revenue per year by expanding to products like these and these.</p>
+        
+        <p>these days im shipping random stuff and seeing what i want to spend more time on. recently built freeewrite, tidbit, and some other viral stuff.</p>
+        
+        <p>in the past, i was the founder of buildspace — it was the largest school in the world for people working on their own ideas from youtube videos to edm music to companies.</p>
+        
+        <p>during the company we scaled nights & weekends online to over 100,000 students, raised from a16z/yc, constructed a physical campus in sf for those that wanted to go full-time on their ideas, grew content to millions, and built an ai social product to help people find others like themselves trying to build stuff.</p>
+        
+        <p>worked on the co for five years. but, i ended up closing it down. here's a letter i wrote about it.</p>
+
+        <p>buildspace was special. really special.<br/>if you were a fan. thank you. you changed our lives.</p>
+        
+        <p>did a bunch of stuff before.</p>
+        
+        <p>founded an online elementary school called zipschool focused on homeschoolers and grew it to 150,000 kiddos, trained a real time cv model that would coach you in overwatch named visor (we got really big actually, then, blizzard banned us oops), was cto at kanga where we built our own models to recommend gamers content they'd enjoy, trained my own open-source deep learning models for esports analytics, built random products for league of legends that got to 1m+ users, built a dumb ar menu app that got no where, and built a bunch of other random stupid shit that was meaningless but fun (lol).</p>
+        
+        <p>some stuff above worked out.<br/>most of it didn't.<br/>but, i learned a lot.</p>
+
+        <p>sometimes i write about my mess ups building stuff or of when things went really right! if you want me to hyu when i write. drop your email below.</p>
+        
+        <p>naruto@gmail.com</p>
+        
+        <p>p.s: if you wanna contact me ping farza@humansongs.so, i generally respond to most emails under 300 characters with a clear ask.</p>
+      
+      </section>
+
     </div>
+
   );
+
 }
