@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContentPage() {
 
   return (
@@ -8,11 +10,11 @@ export default function ContentPage() {
 
       <nav className="flex gap-8 tabs font-medium">
 
-        <link href="/">HOME</link>
+        <Link href="/">HOME</Link>
 
-        <link href="/journaling">CURRENT NOTES SYSTEM</link>
+        <Link href="/journaling">CURRENT NOTES SYSTEM</Link>
 
-        <link href="/content">RECOMMENDED CONTENT</link>
+        <Link href="/content">RECOMMENDED CONTENT</Link>
 
       </nav>
 
