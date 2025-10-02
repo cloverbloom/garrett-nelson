@@ -2,11 +2,31 @@ export default function ContentPage() {
 
   return (
 
-    <div className="p-8 font-sans">
+    <div className="min-h-screen flex flex-col items-start justify-start p-8 font-sans space-y-8 w-2/5">
 
-      <h1 className="heading-1 font-bold mb-4">content</h1>
+      {/* Header nav */}
 
-      <p className="text-body">this is the content page. add your posts, links, or ideas here.</p>
+      <nav className="flex gap-8 tabs font-medium">
+
+        <a href="/">HOME</a>
+
+        <a href="/journaling">CURRENT NOTES SYSTEM</a>
+
+        <a href="/content">RECOMMENDED CONTENT</a>
+
+      </nav>
+
+      {/* Intro */}
+
+      <section className="paragraph space-y-8">
+
+        <p className="title">RECOMMENDED CONTENT</p>
+
+        <p>here is content that inspired me for atleast one of the values i have listed</p>
+      
+        <p>everything that's red is something that changed my perspective & redefined me in some way</p>
+
+      </section>
 
     </div>
 
