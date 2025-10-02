@@ -6,11 +6,11 @@ export default function JournalingPage() {
 
       <nav className="flex gap-8 heading-3 font-medium">
 
-        <a href="/">home</a>
+        <link href="/">home</link>
 
-        <a href="/journaling">current notes system</a>
+        <link href="/journaling">current notes system</link>
 
-        <a href="/content">recommended content</a>
+        <link href="/content">recommended content</link>
 
       </nav>
 

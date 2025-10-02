@@ -8,11 +8,11 @@ export default function ContentPage() {
 
       <nav className="flex gap-8 tabs font-medium">
 
-        <a href="/">HOME</a>
+        <link href="/">HOME</link>
 
-        <a href="/journaling">CURRENT NOTES SYSTEM</a>
+        <link href="/journaling">CURRENT NOTES SYSTEM</link>
 
-        <a href="/content">RECOMMENDED CONTENT</a>
+        <link href="/content">RECOMMENDED CONTENT</link>
 
       </nav>
 
